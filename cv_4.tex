@@ -1,0 +1,180 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage{graphicx}
+\usepackage{fontawesome}
+\usepackage{hyperref}
+\usepackage{pifont}
+\usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry} % Document margins
+%\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Guilherme Le\~{a}o} % Your name
+\address{Rua França Pinto, 319, 04016-031, São Paulo -- SP, Brazil}
+%\address{Rua Am\'alia Bernardino de Sousa, 695, apt. 201, 51021-150, Recife - PE, Brazil}
+%\address{S\~{a}o Jos\'{e} dos Campos - SP} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+%\address{+55 12 98189-9282 \\ guipcleao@gmail.com} % Your phone number and email
+
+\begin{document}
+
+\vspace{-0.3cm}
+\begin{center}
+\faMobile
+	\hspace{0.1cm}
+    +55 (81) 98747-9458
+    \hspace{0.2cm} \ding{120} \hspace{0.2cm}
+\faEnvelope
+    \hspace{0.1cm}
+	\href{mailto:guipcleao@gmail.com}{guipcleao@gmail.com}
+    \hspace{0.2cm} \ding{120} \hspace{0.2cm}
+\faLinkedinSquare
+	\hspace{0.1cm}
+	%\href{https://www.linkedin.com/in/guilherme-leão}{guilherme-le\~{a}o}
+	\href{https://www.linkedin.com/in/guilherme-le\%C3\%A3o}{guilherme-le\~{a}o}
+	\hspace{0.2cm} \ding{120} \hspace{0.2cm}
+\faicon{github}
+    %\hspace{0.1cm}
+	\href{https://github.com/GuiPCLeao}{GuiPCLeao}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Technological Institute of Aeronautics} (ITA) | SP, Brazil \hfill Feb. 2016 - Dec. 2021
+\\ {\em B.Sc in Electronics Engineering (Summa Cum Laude)} \hfill { Overall Grade: 9.53/10}
+
+%{\bf Technological Institute of Aeronautics} (ITA) | SP, Brazil \hfill Mar. 2022 - Dec. 2023 (expected)
+%\\ {\em M.Sc in Electronics and Computer Engineering -- Electronic Devices and Systems} \hfill {} 
+
+% \\ Junior Undergraduate \hfill { Overall GPA: /10}
+% \\ Department of Chemical Engineering  
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Work Experience}
+
+\begin{rSubsection}{\href{https://fieldpro.com.br/}{FieldPRO}}{Apr. 2021 - Present}{Data Engineer and Data Scientist}{}
+
+%\item I got responsible for maintaining and updating the ETL processes to keep the data pipeline working properly. It involved working with \href{https://docs.celeryq.dev/en/stable/getting-started/introduction.html}{Celery} to schedule ETL jobs that extract data from several external and internal APIs and databases (mainly \href{https://www.mysql.com/}{MySQL} and \href{https://www.influxdata.com/}{InfluxDB}); with \href{https://git-scm.com/}{Git} to maintain our repositories version history; with \href{https://kubernetes.io/}{Kubernetes} to trigger deploys in our staging and production environments; and with several cloud computing tools available at \href{https://cloud.google.com/}{Google Cloud Platform (GCP)} such as Storage, Logging and Build Engine.
+
+%\item I am also working to constantly improve the rain analysis that we provide to our clients: I improved our rain model used to process precipitation based on several weather variables and impact measurements read by the sensors in our products, and I created a model to merge punctual raining measurements with satellite raining estimates to create a precipitation heat-map in any desired area at the Brazilian territory.
+
+\item Managed and maintained ETL processes to ensure automated and seamless data pipeline operations, utilizing \href{https://docs.celeryq.dev/en/stable/getting-started/introduction.html}{Celery} for scheduling ETL jobs to extract data from various APIs and databases (such as MySQL and InfluxDB), Kubernetes for staging and production deployments, and Google Cloud Platform tools like Storage, Logging, and Build Engine for cloud computing.
+\item Updated APIs to give important historical and forecast data of the client farm, such as daily accumulated rain, crop accumulated degree-days, NDVI evolution, and many others, helping them to easily identify crop stage and their needs to improve yield.% For that, I used \href{https://flask.palletsprojects.com/}{Flask} framework in Python and mainly Pandas library for development and I created several new endpoints to provide these kinds of information.
+\item Enhanced the raining analysis provided to clients by improving our precipitation processing model accuracy by 10\%, and by creating a product that provides rainfall heat-map for any of our client's farms by merging observational measurements with satellite raining estimates.
+\item Created a proprietary soil moisture estimate model that takes into account not only soil parameters such as the type of the soil but also the water balance (measured water inputs and outputs).
+
+\end{rSubsection}
+
+\begin{rSubsection}{\href{https://fieldpro.com.br/}{FieldPRO}}{Sep. 2021 - Apr. 2022}{Hardware Developer}{}
+
+\item Designed the schematic, defined the Bill of Materials (BoM) and projected the Printed Circuit Board (PCB) of a new version of the product expanding its capabilities to support several communication technologies (GSM, UMTS, LTE, Wi-Fi, Satellite, etc.), enabling installation in more challenging environments in Brazil.
+\item Updated the electrical windsock and anemometer circuits to reduce power consumption and developed a new supply system incorporating rechargeable batteries and solar panels to enhance the weather station's autonomy and minimize maintenance interventions.
+%\item Defined the Bill of Materials (BoM) and schematic, and collaborated with the team to project the Printed Circuit Board (PCB) for the new version of the product.
+\end{rSubsection}
+
+\begin{rSubsection}{GreenLab Solutions}{Dec. 2020 - Aug. 2021}{IoT Developer Intern}{}
+
+\item Developed and installed electronics for automated hydroponics growing chamber, where environmental conditions such as humidity, temperature and $CO_{2}$ concentration were monitored and remotely controlled.
+\item Designed and programmed firmware for circuits using ESP8266 and ESP32 development boards, connected to various sensors, to monitor and control the internal microclimate of the growing chamber.
+%\item Created a remotely controlled humidifier system to maintain minimum climate requirements by increasing relative humidity inside the growing chamber.
+\end{rSubsection}
+
+\begin{rSubsection}{\href{https://www.fst.tu-harburg.de/institut/willkommen}{TUHH - Institut f\"ur Flugzeug-Systemtechnik}}{Oct. 2019 - Sept. 2020}{Software Developer Intern}{}
+
+\item Extended software-based tools used for cross-validation of aircraft systems, enabling engineers to identify problems and perform trade-offs during early design phases, resulting in reduced changes and cost savings during advanced stages of engineering.
+\item I also updated the user interface of the working programs to enhance the process of validating systems topologies, tasks allocations, and data flows in avionics systems. Unity 3D engine, C\# scripting, and .NET framework were used during the process.
+\item Developed scripts to interpret \href{https://cpacs.de/}{CPACS} geometric data and render them using 3D methods like Constructive Solid Geometry (CSG) to model desired aircraft models in the program's 3D environment.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXTRACURRICULAR ACTIVITIES
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Extracurricular Activities}
+
+\begin{rSubsection}{\href{http://www.aeitaonline.com.br/wiki/index.php?title=RedeCASD}{RedeCASD}}{Mar. 2016 - Oct. 2017}{Computer Network Administrator}{}
+\item Managed and maintained the computer network of all students living in the university dormitory.
+\item Developed \href{https://github.com/GuiPCLeao/InstaRancho}{\textit{InstaRancho}} Android app (using Ionic Framework) used by students who attend the campus canteen.
+\item Taught new members of RedeCASD how to configure a Dynamic Host Configuration Protocol (DHCP) server under Debian GNU/ Linux OS.
+\end{rSubsection}
+
+%\begin{rSubsection}{MedCtrl}{Mar. 2017 - Jun. 2017}{Engineering Project}{}
+%\item I developed a portable device that makes stock control of medicines and acquires temperature, humidity and luminosity data to verify stock conditions.
+%\end{rSubsection}
+
+
+%\begin{rSubsection}{Student Mentor}{Aug. 2014 - Dec. 2014}{Mentor of Noic, \href{http://noic.com.br/}{noic.com.br}}{}
+%\item Taught physics with emphasis on Brazilian Physics Olympiad (OBF).
+%\item Developed learning materials with exercises questions of mechanics and optics.
+%\end{rSubsection}
+
+\end{rSection}
+
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Computer Languages  &  Python, C, C++, C\#, MATLAB, R, PHP \\
+Software \& Tools   & Pandas, Flask, NumPy, InfluxDB, Celery, Redis, Keras, Scikit-Learn, Git, Arduino, \\ & ESP32, Altium Designer, FreeRTOS, Quartus, LTspice, KiCad, PlatformIO, Unity \\
+Languages & Portuguese (native), English (advanced), German (beginner) \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Awards} \itemsep -2pt
+\vspace{-7pt}
+\item \textbf{2nd Best Paper}, {\it 19th IEEE Latin American Robotics Symposium} \hfill 2022 \\ {\it Deep Neural Network Algorithm to Control a Curved Kicking Mechanism in RoboCup Small Size League}
+\item \textbf{Summa Cum Laude}, {\it B.Sc in Electronics Engineering at ITA} \hfill 2021 \\ {\it Overall grade greater than 9.5/10}
+\item \textbf{$7^{th}$ place}, {\it International Young Physicists' Tournament Brazil} \hfill 2014
+%\item {\bf Silver Medal}, {\it North and Northeast Chemistry Olympiad (ONNeQ)} \hfill 2014
+%\item {\bf Gold Medal}, {\it Brazilian Olympiad in Astronomy and Astronautics (OBA)} \hfill 2013
+\item {\bf Silver Medal}, {\it Brazilian Physics Olympiad (OBF)} \hfill 2013, 2011
+\item {\bf Silver Medal}, {\it Brazilian Olympiad in Informatics (OBI)} \hfill 2012
+%\item {\bf Silver Medal}, {\it Brazilian Physics Olympiad (OBF)} \hfill 2011
+\end{rSection}
+
+
+\end{document}
